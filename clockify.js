@@ -1,9 +1,9 @@
 // configuration object
 var clockifyConfig = {
-    whatToDo: function boing() {
+    whatToDo: function boing() { // write your own function
         console.log("boing");
     },
-    timeToWait: 1500
+    timeToWait: 1500 // time between two function calls, in miliseconds
 };
 
 var clockify = function (theOptions) {
