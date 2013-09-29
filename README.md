@@ -1,4 +1,4 @@
-clockify
+korClock
 ========
 
 This will run a function on the hour, as many times as the actual hour, with a time interval in between. The function can be anything you want.
