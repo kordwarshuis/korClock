@@ -1,12 +1,18 @@
 // configuration object
-var clockifyConfig = {
-    whatToDo: function boing() { // write your own function
-        console.log("boing");
+var korClockConfig = {
+    whatToDo: function() { // example, write your own function
+        "use strict";
+        console.log("boingBoomTschak");
+        var audio = document.querySelector('audio');
+        audio.pause(); // there is no stop method, this is an alternative
+        if (audio.currentTime !== 0) {audio.currentTime = 0;} // there is no stop method, this is an alternative
+        audio.play();
     },
-    timeToWait: 1500 // time between two function calls, in miliseconds
+    timeToWait: 2500 // time between two function calls, in miliseconds
 };
 
-var clockify = function (theOptions) {
+var korClock = function (theOptions) {
+    "use strict";
     var alreadyPlayed = false;
 
     if (theOptions === undefined || !theOptions.hasOwnProperty("whatToDo") || !theOptions.hasOwnProperty("timeToWait")) {
@@ -100,4 +106,4 @@ var clockify = function (theOptions) {
     checkTime();
 };
 
-clockify(clockifyConfig);
+korClock(korClockConfig);
