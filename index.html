@@ -2,6 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>korClock demo</title>
 </head>
 <body>
@@ -14,6 +15,8 @@
 
 
 <p><a href="http://www.freesound.org/people/acclivity/sounds/19562/">Sound: Acclivity</a> (edited by me)</p>
+
+<p>Note: will not work on iOS (and Android?) since it requires a user-action to start (onload is not enough). Also when browsertab is out of focus, it will stop working since the setTimeout will stop (to save battery). No work around that I know of.</p>
 
 <script src="korClock.js"></script>
 </body>
