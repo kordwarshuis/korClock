@@ -1,3 +1,12 @@
+/*
+ * korClock
+ * Copyright (c) 2013 Kor Dwarshuis (dwarshuis.com)
+ * Licensed under the MIT license:
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+
+
+
 // configuration object
 var korClockConfig = {
     whatToDo: function() { // example, write your own function
